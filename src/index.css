@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+body { font-family: 'Inter', sans-serif; }
+h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; }
+section[id] { scroll-margin-top: 68px; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+  }
+}
